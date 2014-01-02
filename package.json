@@ -12,24 +12,12 @@
     "faceted search",
     "client-side"
   ],
-  "author": {
-    "name": "Brock Fanning",
-    "email": "brockfanning@gmail.com",
-    "url": "http://brockfanning.com"
-  },
+  "author": "Brock Fanning <brockfanning@gmail.com> (http://brockfanning.com)",
   "maintainers": [
-    {
-      "name": "Brock Fanning",
-      "email": "brockfanning@gmail.com",
-      "url": "http://brockfanning.com"
-    }
+    "Brock Fanning <brockfanning@gmail.com> (http://brockfanning.com)"
   ],
   "contributors": [
-    {
-      "name": "Brock Fanning",
-      "email": "brockfanning@gmail.com",
-      "url": "http://brockfanning.com"
-    }
+    "Brock Fanning <brockfanning@gmail.com> (http://brockfanning.com)"
   ],
   "bugs": {
     "url": "https://github.com/brockfanning/docpad-plugin-lunr/issues"
@@ -50,5 +38,8 @@
     "coffee-script": "~1.6.2",
     "docpad": ">=6.37 <7"
   },
-  "main": "./out/lunr.plugin.js"
+  "main": "./out/lunr.plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
