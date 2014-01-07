@@ -19,8 +19,12 @@ module.exports = (BasePlugin) ->
     writeAfter: ->
       if (@config.indexes)
         for indexName, index of @config.indexes
-          indexCollection = @docpad.getCollection(index.collection)
-          if indexCollection
-            indexCollection.forEach (document) ->
-              lunrdoc.index(indexName, document)
+          if typeof index.collection == 'String'
+            index.collection = [index.collection]
+          
+          for collection, colIndex of index.collection
+            indexCollection = @docpad.getCollection(colIndex)
+            if indexCollection
+              indexCollection.forEach (document) ->
+                lunrdoc.index(indexName, document)
         lunrdoc.save()
